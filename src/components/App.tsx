@@ -19,6 +19,12 @@ import {
 
 import { routes } from '@/navigation/routes.tsx';
 
+import './style.css'
+import Faucets from './Faucets/Faucets';
+import Heading from './Heading/Heading';
+import Footer from './Footer/Footer';
+import GasyardFaucet from './GasyardFaucet/GasyardFaucet';
+
 export const App: FC = () => {
   const lp = useLaunchParams();
   const miniApp = useMiniApp();
@@ -54,12 +60,16 @@ export const App: FC = () => {
       appearance={miniApp.isDark ? 'dark' : 'light'}
       platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
     >
-      <Router location={location} navigator={reactNavigator}>
+      {/* <Router location={location} navigator={reactNavigator}>
         <Routes>
           {routes.map((route) => <Route key={route.path} {...route} />)}
           <Route path='*' element={<Navigate to='/'/>}/>
         </Routes>
-      </Router>
+      </Router> */}
+      <div className='root-app'>
+          <GasyardFaucet />
+      </div>
+      
     </AppRoot>
   );
 };

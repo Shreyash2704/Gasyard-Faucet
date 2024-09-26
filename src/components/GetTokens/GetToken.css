@@ -1,0 +1,91 @@
+.token-root{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 150px;
+}
+.back_btn{
+    position: absolute;
+    top:0;
+    left: -10px;
+    cursor: pointer;
+}
+.username{
+    font-family: Inter;
+    font-size: 21.7px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: left;
+    color: #000000;
+}
+.username span{
+    font-family: Inter;
+    font-size: 21.7px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: left;
+    color:#E33D26;
+}
+.claim_text{
+    font-family: Inter;
+    font-size: 17.5px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: #000000;
+}
+.claim_text span{
+    font-family: Inter;
+    font-size: 17.5px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    color: #14A800;
+}
+.evm_address{
+    width: calc(100% - 16px);
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #09194821, 0px 1px 2px 0px #12376914;
+    padding: 16px 8px 16px 8px;
+    gap: 8px;
+    border-radius: 6px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+
+}
+.evm_address::placeholder{
+    font-weight: 400;
+}
+.submit_btn{
+    box-shadow: 0px 0px 0px 1px #29961A, 0px 1px 2px 0px #0B470380;
+    /* border: 1px solid linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%); */
+    background: linear-gradient(0deg, #14A800, #14A800),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 16px 8px 16px 8px;
+    border-radius: 6px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+
+}
+.success_text{
+    font-family: Inter;
+    font-size: 17.5px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: #14A800;
+}

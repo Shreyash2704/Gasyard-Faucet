@@ -1,0 +1,18 @@
+.faucet-root{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 20px;
+}
+.faucets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:6px;
+}
+.faucets img{
+    cursor: pointer;
+}
+.faucet-title{
+   
+}
